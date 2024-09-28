@@ -1,0 +1,146 @@
+/* General styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f6f7;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Service container styling */
+.service-container {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.service-container:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin: 0;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Common button styling */
+button {
+  padding: 10px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the Add Service button */
+.add-service-btn {
+  margin: 20px 0;
+}
+
+/* Styling for the form */
+.service-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.service-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Edit button */
+.edit-service-btn {
+  margin-left: 10px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Delete button */
+.delete-service-btn {
+  margin-left: 10px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .service-container {
+    padding: 10px;
+  }
+
+  .add-service-btn,
+  .edit-service-btn,
+  .delete-service-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Message when no services are available */
+.no-services-message {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.header img {
+  height: 50px; /* Adjust height as needed */
+  margin-right: 10px; /* Space between logo and title */
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+  color: #333;
+}
